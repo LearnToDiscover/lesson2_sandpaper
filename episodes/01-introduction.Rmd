@@ -481,13 +481,16 @@ For this we will assume that some of the data are labelled '0' and some are labe
 
 First we randomly create as many labels as we have rows in the data frame. We can use the `randint` function which we import from 'numpy.random'. `randint` in its simple form takes two arguments. First the upper bound of the integer needed, where by default it starts from zero. As Python is exclusive on the upper bound, providing '2' will thus yield either '0' or '1' only. 
 
+```{python, include=FALSE}
+import numpy.random
+numpy.random.seed(123)
 
+```
 
 ```{python}
 from numpy.random import randint
 
 no_rows = len(df)
-
 randomLabel = randint(2, size=no_rows)
 
 print('Number of rows:  ', no_rows)
@@ -495,6 +498,7 @@ print('Number of Labels:', len(randomLabel))
 print('Labels:          ', randomLabel)
 
 ```
+
 
 Note how we obtain the number of rows (18) using `len` and do not put it directly into the code. 
 
@@ -889,10 +893,7 @@ This section's pdf can be accessed at:[Download pdf](01-introduction.md.pdf)
 
 ## Download jupyter notebook
 
-Coming SOON
+This section's pdf can be accessed at:[Download ipynb](01-introduction.ipynb)
 
-To be seen in Odeon :D
-
-Can not wait for this !!!
 
 [r-markdown]: https://rmarkdown.rstudio.com/
