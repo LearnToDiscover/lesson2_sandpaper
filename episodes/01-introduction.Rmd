@@ -102,13 +102,13 @@ To use the functions contained in Pandas they need to be imported. Our dataset i
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(reticulate)
-#use_python("/usr/local/bin/python3.10")
+## use_python("/usr/local/bin/python3.10")
+## install_python(version = version)
 
 # version = "3.10.2"
-# install_python(version = version)
 # virtualenv_create("r-env", python_version = version)
-# use_virtualenv("r-env")
 # Requirement already satisfied: setuptools in /Users/sabaferdous/.virtualenvs/r-env/lib/python3.10/site-packages (58.1.0)
+
 # virtualenv_install(envname = "r-env", "pandas", "matplotlib", "sklearn")
 
 use_virtualenv("r-env")
@@ -893,7 +893,7 @@ This section's pdf can be accessed at:[Download pdf](01-introduction.md.pdf)
 
 ## Download jupyter notebook
 
-This section's pdf can be accessed at:[Download ipynb](01-introduction.ipynb)
+This section's material in jupyter notebook can be accessed at:[Download notebook (ipynb)](01-introduction.ipynb)
 
 
 [r-markdown]: https://rmarkdown.rstudio.com/
