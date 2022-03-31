@@ -8,6 +8,8 @@
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor traning for instance)
 carpentry: l2d
+varnish: LearnToDiscover/varnish
+sandpaper: LearnToDiscover/sandpaper@l2d
 
 # Overall title for pages.
 title: Data Frames in Python
