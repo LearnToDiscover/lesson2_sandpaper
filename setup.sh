@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-
+pip install jupytext
 mkdir -p ~/.virtualenvs/
 
 python3 -m venv ~/.virtualenvs/r-env
