@@ -1,5 +1,5 @@
 ---
-title: "DataFrames 1"
+title: "Data Frames"
 teaching: 6
 exercises: 2
 output: pdf_document
