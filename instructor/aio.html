@@ -218,7 +218,7 @@
         
 <section id="aio-01-introduction"><p>Content from <a href="01-introduction.html">Data Frames</a></p>
 <hr>
-<p> Last updated on 2022-04-28 | <a href="https://github.com/carpentries/workbench-template-rmd/edit/main/episodes/01-introduction.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p> Last updated on 2022-05-17 | <a href="https://github.com/carpentries/workbench-template-rmd/edit/main/episodes/01-introduction.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 8 minutes </p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -280,7 +280,7 @@
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>The diabetes data set is one of the challenging task.</p>
 </div>
@@ -348,7 +348,7 @@
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>3.10.4 (main, Mar 24 2022, 14:07:25) [GCC 9.4.0]</code></pre>
+<pre class="output" tabindex="0"><code>3.10.4 (main, May  4 2022, 08:46:53) [GCC 9.4.0]</code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -529,7 +529,7 @@ dtype: object</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb22">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -734,7 +734,7 @@ Name: calcium, dtype: float64</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb40">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -804,7 +804,7 @@ dtype: bool</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb44">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -924,7 +924,7 @@ max     5.652390  134.052390</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>[ad libitum]</p>
 </div>
@@ -1113,7 +1113,7 @@ Name: gender, dtype: bool</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb76">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1149,49 +1149,40 @@ Name: gender, dtype: bool</code></pre>
 <div class="codewrapper sourceCode" id="cb78">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> read_csv(<span class="st">"data/everleys_data.csv"</span>) </span>
+<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a>plt.boxplot(df)</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>Matplotlib is building the font cache; this may take a moment.</code></pre>
+<pre class="output" tabindex="0"><code>{'whiskers': [&lt;matplotlib.lines.Line2D object at 0x7f52f8869d20&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f8869ff0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f886b100&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f886b3d0&gt;], 'caps': [&lt;matplotlib.lines.Line2D object at 0x7f52f886a2c0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f886a590&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f886b6a0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f886b970&gt;], 'boxes': [&lt;matplotlib.lines.Line2D object at 0x7f52f8869a50&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f886ae30&gt;], 'medians': [&lt;matplotlib.lines.Line2D object at 0x7f52f886a860&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f886bc40&gt;], 'fliers': [&lt;matplotlib.lines.Line2D object at 0x7f52f886ab30&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f886bf10&gt;], 'means': []}</code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb80">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> read_csv(<span class="st">"data/everleys_data.csv"</span>) </span>
-<span id="cb80-2"><a href="#cb80-2" aria-hidden="true" tabindex="-1"></a>plt.boxplot(df)</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre>
+</div>
+<figure><img src="../fig/01-introduction-rendered-unnamed-chunk-35-1.png" width="672" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>By default, boxplots are shown for all columns if no further argument is given to the function (empty round parenthesis). As the calcium plot is rather squeezed we may wish to see it individually. This can be done by specifying the calcium column as an argument:</p>
+<div class="codewrapper sourceCode" id="cb81">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-2"><a href="#cb81-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Boxplot of calcium results</span></span>
+<span id="cb81-3"><a href="#cb81-3" aria-hidden="true" tabindex="-1"></a><span class="co"># df.boxplot(column='calcium');</span></span>
+<span id="cb81-4"><a href="#cb81-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-5"><a href="#cb81-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-6"><a href="#cb81-6" aria-hidden="true" tabindex="-1"></a>plt.boxplot(df[<span class="st">'calcium'</span>])</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>{'whiskers': [&lt;matplotlib.lines.Line2D object at 0x7f1271abdf30&gt;, &lt;matplotlib.lines.Line2D object at 0x7f1271abe200&gt;, &lt;matplotlib.lines.Line2D object at 0x7f1271abf310&gt;, &lt;matplotlib.lines.Line2D object at 0x7f1271abf5e0&gt;], 'caps': [&lt;matplotlib.lines.Line2D object at 0x7f1271abe590&gt;, &lt;matplotlib.lines.Line2D object at 0x7f1271abe7a0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f1271abf8b0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f1271abfb80&gt;], 'boxes': [&lt;matplotlib.lines.Line2D object at 0x7f1271abdc60&gt;, &lt;matplotlib.lines.Line2D object at 0x7f1271abf040&gt;], 'medians': [&lt;matplotlib.lines.Line2D object at 0x7f1271abea70&gt;, &lt;matplotlib.lines.Line2D object at 0x7f1271abfe50&gt;], 'fliers': [&lt;matplotlib.lines.Line2D object at 0x7f1271abed40&gt;, &lt;matplotlib.lines.Line2D object at 0x7f1271b04160&gt;], 'means': []}</code></pre>
+<pre class="output" tabindex="0"><code>{'whiskers': [&lt;matplotlib.lines.Line2D object at 0x7f52f8745b40&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f8745cf0&gt;], 'caps': [&lt;matplotlib.lines.Line2D object at 0x7f52f8745fc0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f8746290&gt;], 'boxes': [&lt;matplotlib.lines.Line2D object at 0x7f52f8745870&gt;], 'medians': [&lt;matplotlib.lines.Line2D object at 0x7f52f8746560&gt;], 'fliers': [&lt;matplotlib.lines.Line2D object at 0x7f52f8746830&gt;], 'means': []}</code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb82">
-<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre>
-</div>
-<figure><img src="../fig/01-introduction-rendered-unnamed-chunk-35-1.png" width="672" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>By default, boxplots are shown for all columns if no further argument is given to the function (empty round parenthesis). As the calcium plot is rather squeezed we may wish to see it individually. This can be done by specifying the calcium column as an argument:</p>
 <div class="codewrapper sourceCode" id="cb83">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Boxplot of calcium results</span></span>
-<span id="cb83-3"><a href="#cb83-3" aria-hidden="true" tabindex="-1"></a><span class="co"># df.boxplot(column='calcium');</span></span>
-<span id="cb83-4"><a href="#cb83-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb83-5"><a href="#cb83-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb83-6"><a href="#cb83-6" aria-hidden="true" tabindex="-1"></a>plt.boxplot(df[<span class="st">'calcium'</span>])</span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code>{'whiskers': [&lt;matplotlib.lines.Line2D object at 0x7f1271ba1e40&gt;, &lt;matplotlib.lines.Line2D object at 0x7f1271ba1ff0&gt;], 'caps': [&lt;matplotlib.lines.Line2D object at 0x7f1271ba22c0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f1271ba2590&gt;], 'boxes': [&lt;matplotlib.lines.Line2D object at 0x7f1271ba1b70&gt;], 'medians': [&lt;matplotlib.lines.Line2D object at 0x7f1271ba2860&gt;], 'fliers': [&lt;matplotlib.lines.Line2D object at 0x7f1271ba2b30&gt;], 'means': []}</code></pre>
-</div>
-<div class="codewrapper sourceCode" id="cb85">
-<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre>
 </div>
 <figure><img src="../fig/01-introduction-rendered-unnamed-chunk-36-3.png" width="672" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div class="section level3">
 <h3 id="plots-using-matplotlib">Plots using Matplotlib<a class="anchor" aria-label="anchor" href="#plots-using-matplotlib"></a>
@@ -1202,80 +1193,80 @@ Name: gender, dtype: bool</code></pre>
 <p>The above is an easy way to create boxplots directly on the dataframe. It is based on the library Matplotlib and specifically uses the <strong>pyplot library</strong>. For simplicity, the code is put in a convenient Pandas function.</p>
 <p>However, we are going to use <strong>Matplotlib</strong> extensively later on in the course, and we therefore now introduce the direct, generic way of using it.</p>
 <p>For this, we import the function <code>subplots</code> from the <a href="https://matplotlib.org/stable/api/pyplot_summary.html" class="external-link">pyplot library</a>:</p>
-<div class="codewrapper sourceCode" id="cb86">
+<div class="codewrapper sourceCode" id="cb84">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.pyplot <span class="im">import</span> subplots</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.pyplot <span class="im">import</span> subplots</span></code></pre>
 </div>
 <p>The way to use <code>subplots</code> is to first set up a figure environment (below it is called ‘fig’) and an empty coordinate system (below called ‘ax’). The plot is then done using one of the many methods available in Matplotlib. We apply it to the coordinate system ‘ax’.</p>
 <p>As an example, let us create a <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.boxplot.html#matplotlib.pyplot.boxplot%7C" class="external-link">boxplot</a> of the calcium variable. As an argument of the function we need to specify the data. We can use the values of the ‘calcium’ concentrations from the column with that name:</p>
-<div class="codewrapper sourceCode" id="cb87">
+<div class="codewrapper sourceCode" id="cb85">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots()</span>
-<span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb87-3"><a href="#cb87-3" aria-hidden="true" tabindex="-1"></a>ax.boxplot(df[<span class="st">'calcium'</span>])</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots()</span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-3"><a href="#cb85-3" aria-hidden="true" tabindex="-1"></a>ax.boxplot(df[<span class="st">'calcium'</span>])</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>{'whiskers': [&lt;matplotlib.lines.Line2D object at 0x7f12719feda0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f12719ff070&gt;], 'caps': [&lt;matplotlib.lines.Line2D object at 0x7f12719ff340&gt;, &lt;matplotlib.lines.Line2D object at 0x7f12719ff610&gt;], 'boxes': [&lt;matplotlib.lines.Line2D object at 0x7f12719fe830&gt;], 'medians': [&lt;matplotlib.lines.Line2D object at 0x7f12719ff8e0&gt;], 'fliers': [&lt;matplotlib.lines.Line2D object at 0x7f12719ffbb0&gt;], 'means': []}</code></pre>
+<pre class="output" tabindex="0"><code>{'whiskers': [&lt;matplotlib.lines.Line2D object at 0x7f52f879a860&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f879ab30&gt;], 'caps': [&lt;matplotlib.lines.Line2D object at 0x7f52f879ae00&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f879b0d0&gt;], 'boxes': [&lt;matplotlib.lines.Line2D object at 0x7f52f879a2f0&gt;], 'medians': [&lt;matplotlib.lines.Line2D object at 0x7f52f879b3a0&gt;], 'fliers': [&lt;matplotlib.lines.Line2D object at 0x7f52f879b670&gt;], 'means': []}</code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb89">
+<div class="codewrapper sourceCode" id="cb87">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Boxplot of Everley</span><span class="ch">\'</span><span class="st">s Calcium'</span>)<span class="op">;</span></span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Boxplot of Everley</span><span class="ch">\'</span><span class="st">s Calcium'</span>)<span class="op">;</span></span></code></pre>
 </div>
 <figure><img src="../fig/output_93_0.png" alt="" class="figure mx-auto d-block"><figcaption>png</figcaption></figure><p>Note how following the actual plot we define the title of the plot by referring to the same coordinate system <code>ax</code>.</p>
 <p>The value of <code>subplots</code> becomes apparent when we try to create more than one plot in a single figure.</p>
 <p>Here is an example to create two boxplots next to each other. The keyword arguments to use is ‘ncols’ which is the number of figures per row. ‘ncols=2’ indicates that you want to have two plots next to each other.</p>
-<div class="codewrapper sourceCode" id="cb90">
+<div class="codewrapper sourceCode" id="cb88">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots(ncols<span class="op">=</span><span class="dv">2</span>)</span>
-<span id="cb90-2"><a href="#cb90-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb90-3"><a href="#cb90-3" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].boxplot(df[<span class="st">'calcium'</span>])</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots(ncols<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-3"><a href="#cb88-3" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].boxplot(df[<span class="st">'calcium'</span>])</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>{'whiskers': [&lt;matplotlib.lines.Line2D object at 0x7f1271a58040&gt;, &lt;matplotlib.lines.Line2D object at 0x7f1271a58310&gt;], 'caps': [&lt;matplotlib.lines.Line2D object at 0x7f1271a585e0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f1271a58820&gt;], 'boxes': [&lt;matplotlib.lines.Line2D object at 0x7f1271a33a90&gt;], 'medians': [&lt;matplotlib.lines.Line2D object at 0x7f1271a58af0&gt;], 'fliers': [&lt;matplotlib.lines.Line2D object at 0x7f1271a58dc0&gt;], 'means': []}</code></pre>
+<pre class="output" tabindex="0"><code>{'whiskers': [&lt;matplotlib.lines.Line2D object at 0x7f52f87dbac0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f87dbd90&gt;], 'caps': [&lt;matplotlib.lines.Line2D object at 0x7f52f87fc0a0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f87fc2e0&gt;], 'boxes': [&lt;matplotlib.lines.Line2D object at 0x7f52f87db550&gt;], 'medians': [&lt;matplotlib.lines.Line2D object at 0x7f52f87fc5b0&gt;], 'fliers': [&lt;matplotlib.lines.Line2D object at 0x7f52f87fc880&gt;], 'means': []}</code></pre>
+</div>
+<div class="codewrapper sourceCode" id="cb90">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_title(<span class="st">'Calcium'</span>)</span>
+<span id="cb90-2"><a href="#cb90-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb90-3"><a href="#cb90-3" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].boxplot(df[<span class="st">'sodium'</span>])</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>{'whiskers': [&lt;matplotlib.lines.Line2D object at 0x7f52f87fd0c0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f87fd390&gt;], 'caps': [&lt;matplotlib.lines.Line2D object at 0x7f52f87fd660&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f87fd930&gt;], 'boxes': [&lt;matplotlib.lines.Line2D object at 0x7f52f87fcdf0&gt;], 'medians': [&lt;matplotlib.lines.Line2D object at 0x7f52f87fdc00&gt;], 'fliers': [&lt;matplotlib.lines.Line2D object at 0x7f52f87fded0&gt;], 'means': []}</code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb92">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_title(<span class="st">'Calcium'</span>)</span>
-<span id="cb92-2"><a href="#cb92-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb92-3"><a href="#cb92-3" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].boxplot(df[<span class="st">'sodium'</span>])</span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code>{'whiskers': [&lt;matplotlib.lines.Line2D object at 0x7f1271a59600&gt;, &lt;matplotlib.lines.Line2D object at 0x7f1271a598d0&gt;], 'caps': [&lt;matplotlib.lines.Line2D object at 0x7f1271a59ba0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f1271a59e70&gt;], 'boxes': [&lt;matplotlib.lines.Line2D object at 0x7f1271a59330&gt;], 'medians': [&lt;matplotlib.lines.Line2D object at 0x7f1271a5a140&gt;], 'fliers': [&lt;matplotlib.lines.Line2D object at 0x7f1271a5a410&gt;], 'means': []}</code></pre>
-</div>
-<div class="codewrapper sourceCode" id="cb94">
-<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_title(<span class="st">'Sodium'</span>)<span class="op">;</span></span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_title(<span class="st">'Sodium'</span>)<span class="op">;</span></span></code></pre>
 </div>
 <figure><img src="../fig/output_95_0.png" alt="" class="figure mx-auto d-block"><figcaption>png</figcaption></figure><p>Note that you now have to refer to each of the subplots by indexing the coordinate system ‘ax’. | This figure gives a good overview of the Everley’s data.</p>
 <p>If you prefer to have the boxplots of both columns in a single figure, that can also be done:</p>
-<div class="codewrapper sourceCode" id="cb95">
+<div class="codewrapper sourceCode" id="cb93">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots(ncols<span class="op">=</span><span class="dv">1</span>, nrows<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb95-2"><a href="#cb95-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb95-3"><a href="#cb95-3" aria-hidden="true" tabindex="-1"></a>ax.boxplot([df[<span class="st">'calcium'</span>], df[<span class="st">'sodium'</span>]], positions<span class="op">=</span>[<span class="dv">1</span>, <span class="dv">2</span>])</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots(ncols<span class="op">=</span><span class="dv">1</span>, nrows<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb93-2"><a href="#cb93-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb93-3"><a href="#cb93-3" aria-hidden="true" tabindex="-1"></a>ax.boxplot([df[<span class="st">'calcium'</span>], df[<span class="st">'sodium'</span>]], positions<span class="op">=</span>[<span class="dv">1</span>, <span class="dv">2</span>])</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>{'whiskers': [&lt;matplotlib.lines.Line2D object at 0x7f12718b8790&gt;, &lt;matplotlib.lines.Line2D object at 0x7f12718b8e80&gt;, &lt;matplotlib.lines.Line2D object at 0x7f12718b9f60&gt;, &lt;matplotlib.lines.Line2D object at 0x7f12718ba230&gt;], 'caps': [&lt;matplotlib.lines.Line2D object at 0x7f12718b9150&gt;, &lt;matplotlib.lines.Line2D object at 0x7f12718b9420&gt;, &lt;matplotlib.lines.Line2D object at 0x7f12718ba500&gt;, &lt;matplotlib.lines.Line2D object at 0x7f12718ba7d0&gt;], 'boxes': [&lt;matplotlib.lines.Line2D object at 0x7f12718b8ac0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f12718b9c90&gt;], 'medians': [&lt;matplotlib.lines.Line2D object at 0x7f12718b96f0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f12718baaa0&gt;], 'fliers': [&lt;matplotlib.lines.Line2D object at 0x7f12718b99c0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f12718bad70&gt;], 'means': []}</code></pre>
+<pre class="output" tabindex="0"><code>{'whiskers': [&lt;matplotlib.lines.Line2D object at 0x7f52f8654250&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f8654940&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f8655a20&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f8655cf0&gt;], 'caps': [&lt;matplotlib.lines.Line2D object at 0x7f52f8654c10&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f8654ee0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f8655fc0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f8656290&gt;], 'boxes': [&lt;matplotlib.lines.Line2D object at 0x7f52f8654580&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f8655750&gt;], 'medians': [&lt;matplotlib.lines.Line2D object at 0x7f52f86551b0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f8656560&gt;], 'fliers': [&lt;matplotlib.lines.Line2D object at 0x7f52f8655480&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f8656830&gt;], 'means': []}</code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb97">
+<div class="codewrapper sourceCode" id="cb95">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Boxplot of Calcium (left) and Sodium (right)'</span>)</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Boxplot of Calcium (left) and Sodium (right)'</span>)</span></code></pre>
 </div>
 <figure><img src="../fig/01-introduction-rendered-unnamed-chunk-40-5.png" width="672" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><figure><img src="../fig/output_98_1.png" alt="" class="figure mx-auto d-block"><figcaption>png</figcaption></figure><div id="challenge6" class="callout challenge">
 <div class="callout-square">
@@ -1295,24 +1286,24 @@ Name: gender, dtype: bool</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb98">
+<div class="codewrapper sourceCode" id="cb96">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots(ncols<span class="op">=</span><span class="dv">1</span>, nrows<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb98-2"><a href="#cb98-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb98-3"><a href="#cb98-3" aria-hidden="true" tabindex="-1"></a>ax.boxplot([df_loan[<span class="st">'ApplicantIncome'</span>], df_loan[<span class="st">'CoapplicantIncome'</span>]], positions<span class="op">=</span>[<span class="dv">1</span>, <span class="dv">2</span>])</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots(ncols<span class="op">=</span><span class="dv">1</span>, nrows<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb96-2"><a href="#cb96-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb96-3"><a href="#cb96-3" aria-hidden="true" tabindex="-1"></a>ax.boxplot([df_loan[<span class="st">'ApplicantIncome'</span>], df_loan[<span class="st">'CoapplicantIncome'</span>]], positions<span class="op">=</span>[<span class="dv">1</span>, <span class="dv">2</span>])</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>{'whiskers': [&lt;matplotlib.lines.Line2D object at 0x7f127192c2b0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f127192c580&gt;, &lt;matplotlib.lines.Line2D object at 0x7f127192d660&gt;, &lt;matplotlib.lines.Line2D object at 0x7f127192d930&gt;], 'caps': [&lt;matplotlib.lines.Line2D object at 0x7f127192c850&gt;, &lt;matplotlib.lines.Line2D object at 0x7f127192cb20&gt;, &lt;matplotlib.lines.Line2D object at 0x7f127192dc00&gt;, &lt;matplotlib.lines.Line2D object at 0x7f127192ded0&gt;], 'boxes': [&lt;matplotlib.lines.Line2D object at 0x7f12718f0df0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f127192d390&gt;], 'medians': [&lt;matplotlib.lines.Line2D object at 0x7f127192cdf0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f127192e1a0&gt;], 'fliers': [&lt;matplotlib.lines.Line2D object at 0x7f127192d0c0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f127192e470&gt;], 'means': []}</code></pre>
+<pre class="output" tabindex="0"><code>{'whiskers': [&lt;matplotlib.lines.Line2D object at 0x7f52f86afa60&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f86afd30&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f86d8e50&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f86d9120&gt;], 'caps': [&lt;matplotlib.lines.Line2D object at 0x7f52f86d8040&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f86d8310&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f86d93f0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f86d96c0&gt;], 'boxes': [&lt;matplotlib.lines.Line2D object at 0x7f52f86af460&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f86d8b80&gt;], 'medians': [&lt;matplotlib.lines.Line2D object at 0x7f52f86d85e0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f86d9990&gt;], 'fliers': [&lt;matplotlib.lines.Line2D object at 0x7f52f86d88b0&gt;, &lt;matplotlib.lines.Line2D object at 0x7f52f86d9c60&gt;], 'means': []}</code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb100">
+<div class="codewrapper sourceCode" id="cb98">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb100-1"><a href="#cb100-1" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Applicant Income (left) &amp; Co-Applicant Income (right)'</span>)<span class="op">;</span></span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Applicant Income (left) &amp; Co-Applicant Income (right)'</span>)<span class="op">;</span></span></code></pre>
 </div>
 <figure><img src="../fig/output_139_0.png" alt="" class="figure mx-auto d-block"><figcaption>Applicant Income (left) &amp; Co-Applicant Income (right)</figcaption></figure>
 </div>
@@ -1324,12 +1315,12 @@ Name: gender, dtype: bool</code></pre>
 <h3 id="histogram">Histogram<a class="anchor" aria-label="anchor" href="#histogram"></a>
 </h3>
 <p>Another good overview is the histogram: Containers or ‘bins’ are created over the range of values found within a column and the count of the values for each bin is plotted on the vertical axis.</p>
-<div class="codewrapper sourceCode" id="cb101">
+<div class="codewrapper sourceCode" id="cb99">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots(ncols<span class="op">=</span><span class="dv">2</span>, nrows<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb101-2"><a href="#cb101-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb101-3"><a href="#cb101-3" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].hist(df[<span class="st">'calcium'</span>])</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots(ncols<span class="op">=</span><span class="dv">2</span>, nrows<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb99-2"><a href="#cb99-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb99-3"><a href="#cb99-3" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].hist(df[<span class="st">'calcium'</span>])</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1338,12 +1329,12 @@ Name: gender, dtype: bool</code></pre>
        3.18410042, 3.67775837, 4.17141633, 4.66507429, 5.15873224,
        5.6523902 ]), &lt;BarContainer object of 10 artists&gt;)</code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb103">
+<div class="codewrapper sourceCode" id="cb101">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Calcium'</span>, ylabel<span class="op">=</span><span class="st">'Count'</span>)<span class="op">;</span></span>
-<span id="cb103-2"><a href="#cb103-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb103-3"><a href="#cb103-3" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].hist(df[<span class="st">'sodium'</span>])</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Calcium'</span>, ylabel<span class="op">=</span><span class="st">'Count'</span>)<span class="op">;</span></span>
+<span id="cb101-2"><a href="#cb101-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb101-3"><a href="#cb101-3" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].hist(df[<span class="st">'sodium'</span>])</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1352,56 +1343,56 @@ Name: gender, dtype: bool</code></pre>
        115.9919395, 119.6040296, 123.2161197, 126.8282098, 130.4402999,
        134.05239  ]), &lt;BarContainer object of 10 artists&gt;)</code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb105">
+<div class="codewrapper sourceCode" id="cb103">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb105-1"><a href="#cb105-1" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Sodium'</span>, ylabel<span class="op">=</span><span class="st">'Count'</span>)<span class="op">;</span></span>
-<span id="cb105-2"><a href="#cb105-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb105-3"><a href="#cb105-3" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">'Histograms of Everley concentrations'</span>, fontsize<span class="op">=</span><span class="dv">15</span>)<span class="op">;</span></span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Sodium'</span>, ylabel<span class="op">=</span><span class="st">'Count'</span>)<span class="op">;</span></span>
+<span id="cb103-2"><a href="#cb103-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb103-3"><a href="#cb103-3" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">'Histograms of Everley concentrations'</span>, fontsize<span class="op">=</span><span class="dv">15</span>)<span class="op">;</span></span></code></pre>
 </div>
 <figure><img src="../fig/output_102_0.png" alt="" class="figure mx-auto d-block"><figcaption>png</figcaption></figure><p>This also shows how to add labels to the axes and a title to the overall figure.</p>
 <p>This uses the default value for the generation of the bins. It is set to 10 bins over the range of which values are found. The number of bins in the histogram can be changed using the keyword argument ‘bins’:</p>
-<div class="codewrapper sourceCode" id="cb106">
+<div class="codewrapper sourceCode" id="cb104">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots(ncols<span class="op">=</span><span class="dv">2</span>, nrows<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb106-2"><a href="#cb106-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb106-3"><a href="#cb106-3" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].hist(df[<span class="st">'calcium'</span>], bins<span class="op">=</span><span class="dv">5</span>)</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb104-1"><a href="#cb104-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots(ncols<span class="op">=</span><span class="dv">2</span>, nrows<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb104-2"><a href="#cb104-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb104-3"><a href="#cb104-3" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].hist(df[<span class="st">'calcium'</span>], bins<span class="op">=</span><span class="dv">5</span>)</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>(array([3., 2., 8., 3., 2.]), array([0.71581063, 1.70312654, 2.69044246, 3.67775837, 4.66507429,
        5.6523902 ]), &lt;BarContainer object of 5 artists&gt;)</code></pre>
+</div>
+<div class="codewrapper sourceCode" id="cb106">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Calcium, 5 bins'</span>, ylabel<span class="op">=</span><span class="st">'Count'</span>)<span class="op">;</span></span>
+<span id="cb106-2"><a href="#cb106-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb106-3"><a href="#cb106-3" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].hist(df[<span class="st">'calcium'</span>], bins<span class="op">=</span><span class="dv">15</span>)</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>(array([1., 2., 0., 1., 0., 1., 3., 1., 4., 2., 1., 0., 0., 0., 2.]), array([0.71581063, 1.04491593, 1.37402124, 1.70312654, 2.03223185,
+       2.36133715, 2.69044246, 3.01954776, 3.34865307, 3.67775837,
+       4.00686368, 4.33596898, 4.66507429, 4.99417959, 5.3232849 ,
+       5.6523902 ]), &lt;BarContainer object of 15 artists&gt;)</code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb108">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Calcium, 5 bins'</span>, ylabel<span class="op">=</span><span class="st">'Count'</span>)<span class="op">;</span></span>
-<span id="cb108-2"><a href="#cb108-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb108-3"><a href="#cb108-3" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].hist(df[<span class="st">'calcium'</span>], bins<span class="op">=</span><span class="dv">15</span>)</span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code>(array([1., 2., 0., 1., 0., 1., 3., 1., 4., 2., 1., 0., 0., 0., 2.]), array([0.71581063, 1.04491593, 1.37402124, 1.70312654, 2.03223185,
-       2.36133715, 2.69044246, 3.01954776, 3.34865307, 3.67775837,
-       4.00686368, 4.33596898, 4.66507429, 4.99417959, 5.3232849 ,
-       5.6523902 ]), &lt;BarContainer object of 15 artists&gt;)</code></pre>
-</div>
-<div class="codewrapper sourceCode" id="cb110">
-<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb110-1"><a href="#cb110-1" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Calcium, 15 bins'</span>, ylabel<span class="op">=</span><span class="st">'Count'</span>)<span class="op">;</span></span>
-<span id="cb110-2"><a href="#cb110-2" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">'Histograms with Different Binnings'</span>, fontsize<span class="op">=</span><span class="dv">16</span>)<span class="op">;</span></span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Calcium, 15 bins'</span>, ylabel<span class="op">=</span><span class="st">'Count'</span>)<span class="op">;</span></span>
+<span id="cb108-2"><a href="#cb108-2" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">'Histograms with Different Binnings'</span>, fontsize<span class="op">=</span><span class="dv">16</span>)<span class="op">;</span></span></code></pre>
 </div>
 <figure><img src="../fig/output_104_0.png" alt="" class="figure mx-auto d-block"><figcaption>png</figcaption></figure><p>Note how the y-label of the right figure is not placed well. To correct for the placement of the labels and the title, you can use <code>tight_layout</code> on the figure:</p>
-<div class="codewrapper sourceCode" id="cb111">
+<div class="codewrapper sourceCode" id="cb109">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb111-1"><a href="#cb111-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots(ncols<span class="op">=</span><span class="dv">2</span>, nrows<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb111-2"><a href="#cb111-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb111-3"><a href="#cb111-3" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].hist(df[<span class="st">'calcium'</span>], bins<span class="op">=</span><span class="dv">5</span>)</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb109-1"><a href="#cb109-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots(ncols<span class="op">=</span><span class="dv">2</span>, nrows<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb109-2"><a href="#cb109-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb109-3"><a href="#cb109-3" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].hist(df[<span class="st">'calcium'</span>], bins<span class="op">=</span><span class="dv">5</span>)</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1409,12 +1400,12 @@ Name: gender, dtype: bool</code></pre>
 <pre class="output" tabindex="0"><code>(array([3., 2., 8., 3., 2.]), array([0.71581063, 1.70312654, 2.69044246, 3.67775837, 4.66507429,
        5.6523902 ]), &lt;BarContainer object of 5 artists&gt;)</code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb113">
+<div class="codewrapper sourceCode" id="cb111">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb113-1"><a href="#cb113-1" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Calcium, 5 bins'</span>, ylabel<span class="op">=</span><span class="st">'Count'</span>)<span class="op">;</span></span>
-<span id="cb113-2"><a href="#cb113-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb113-3"><a href="#cb113-3" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].hist(df[<span class="st">'calcium'</span>], bins<span class="op">=</span><span class="dv">15</span>)</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb111-1"><a href="#cb111-1" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Calcium, 5 bins'</span>, ylabel<span class="op">=</span><span class="st">'Count'</span>)<span class="op">;</span></span>
+<span id="cb111-2"><a href="#cb111-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb111-3"><a href="#cb111-3" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].hist(df[<span class="st">'calcium'</span>], bins<span class="op">=</span><span class="dv">15</span>)</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1424,12 +1415,12 @@ Name: gender, dtype: bool</code></pre>
        4.00686368, 4.33596898, 4.66507429, 4.99417959, 5.3232849 ,
        5.6523902 ]), &lt;BarContainer object of 15 artists&gt;)</code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb115">
+<div class="codewrapper sourceCode" id="cb113">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb115-1"><a href="#cb115-1" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Calcium, 15 bins'</span>, ylabel<span class="op">=</span><span class="st">'Count'</span>)<span class="op">;</span></span>
-<span id="cb115-2"><a href="#cb115-2" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">'Histograms with Different Binnings'</span>, fontsize<span class="op">=</span><span class="dv">16</span>)<span class="op">;</span></span>
-<span id="cb115-3"><a href="#cb115-3" aria-hidden="true" tabindex="-1"></a>fig.tight_layout()</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb113-1"><a href="#cb113-1" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Calcium, 15 bins'</span>, ylabel<span class="op">=</span><span class="st">'Count'</span>)<span class="op">;</span></span>
+<span id="cb113-2"><a href="#cb113-2" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">'Histograms with Different Binnings'</span>, fontsize<span class="op">=</span><span class="dv">16</span>)<span class="op">;</span></span>
+<span id="cb113-3"><a href="#cb113-3" aria-hidden="true" tabindex="-1"></a>fig.tight_layout()</span></code></pre>
 </div>
 <figure><img src="../fig/output_106_0.png" alt="" class="figure mx-auto d-block"><figcaption>png</figcaption></figure><div id="challenge7" class="callout challenge">
 <div class="callout-square">
@@ -1449,16 +1440,16 @@ Name: gender, dtype: bool</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb116">
+<div class="codewrapper sourceCode" id="cb114">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb116-1"><a href="#cb116-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Histogram of loan amounts in k£</span></span>
-<span id="cb116-2"><a href="#cb116-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb116-3"><a href="#cb116-3" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots()</span>
-<span id="cb116-4"><a href="#cb116-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb116-5"><a href="#cb116-5" aria-hidden="true" tabindex="-1"></a>ax.hist(df_loan[<span class="st">'LoanAmount'</span>], bins<span class="op">=</span><span class="dv">20</span>)</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Histogram of loan amounts in k£</span></span>
+<span id="cb114-2"><a href="#cb114-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb114-3"><a href="#cb114-3" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots()</span>
+<span id="cb114-4"><a href="#cb114-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb114-5"><a href="#cb114-5" aria-hidden="true" tabindex="-1"></a>ax.hist(df_loan[<span class="st">'LoanAmount'</span>], bins<span class="op">=</span><span class="dv">20</span>)</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1468,12 +1459,12 @@ Name: gender, dtype: bool</code></pre>
        262.9, 289. , 315.1, 341.2, 367.3, 393.4, 419.5, 445.6, 471.7,
        497.8, 523.9, 550. ]), &lt;BarContainer object of 20 artists&gt;)</code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb118">
+<div class="codewrapper sourceCode" id="cb116">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb118-1"><a href="#cb118-1" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Loan amount'</span>, ylabel<span class="op">=</span><span class="st">'Count'</span>)<span class="op">;</span></span>
-<span id="cb118-2"><a href="#cb118-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb118-3"><a href="#cb118-3" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Histograms of Loan Amounts'</span>, fontsize<span class="op">=</span><span class="dv">16</span>)<span class="op">;</span></span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb116-1"><a href="#cb116-1" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Loan amount'</span>, ylabel<span class="op">=</span><span class="st">'Count'</span>)<span class="op">;</span></span>
+<span id="cb116-2"><a href="#cb116-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb116-3"><a href="#cb116-3" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Histograms of Loan Amounts'</span>, fontsize<span class="op">=</span><span class="dv">16</span>)<span class="op">;</span></span></code></pre>
 </div>
 <figure><img src="../fig/output_142_0.png" alt="" class="figure mx-auto d-block"><figcaption>Histograms of Loan Amounts</figcaption></figure>
 </div>
@@ -1491,42 +1482,42 @@ Name: gender, dtype: bool</code></pre>
 <li>Get a summary plot of one of its statistical quantities (e.g. mean) for all columns</li>
 </ul>
 <p>First we import the data set and check its <code>head</code>. Wait until the numbers show below the code, it might take a while.</p>
-<div class="codewrapper sourceCode" id="cb119">
+<div class="codewrapper sourceCode" id="cb117">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb119-1"><a href="#cb119-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> datasets</span>
-<span id="cb119-2"><a href="#cb119-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb119-3"><a href="#cb119-3" aria-hidden="true" tabindex="-1"></a>diabetes <span class="op">=</span> datasets.load_diabetes()</span>
-<span id="cb119-4"><a href="#cb119-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb119-5"><a href="#cb119-5" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> diabetes.data</span>
-<span id="cb119-6"><a href="#cb119-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb119-7"><a href="#cb119-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pandas <span class="im">import</span> DataFrame</span>
-<span id="cb119-8"><a href="#cb119-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb119-9"><a href="#cb119-9" aria-hidden="true" tabindex="-1"></a>df_diabetes <span class="op">=</span> DataFrame(data<span class="op">=</span>X)</span>
-<span id="cb119-10"><a href="#cb119-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb119-11"><a href="#cb119-11" aria-hidden="true" tabindex="-1"></a>df_diabetes.head()</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb117-1"><a href="#cb117-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> datasets</span>
+<span id="cb117-2"><a href="#cb117-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb117-3"><a href="#cb117-3" aria-hidden="true" tabindex="-1"></a>diabetes <span class="op">=</span> datasets.load_diabetes()</span>
+<span id="cb117-4"><a href="#cb117-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb117-5"><a href="#cb117-5" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> diabetes.data</span>
+<span id="cb117-6"><a href="#cb117-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb117-7"><a href="#cb117-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pandas <span class="im">import</span> DataFrame</span>
+<span id="cb117-8"><a href="#cb117-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb117-9"><a href="#cb117-9" aria-hidden="true" tabindex="-1"></a>df_diabetes <span class="op">=</span> DataFrame(data<span class="op">=</span>X)</span>
+<span id="cb117-10"><a href="#cb117-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb117-11"><a href="#cb117-11" aria-hidden="true" tabindex="-1"></a>df_diabetes.head()</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>          0         1         2  ...         7         8         9
-0  0.038076  0.050680  0.061696  ... -0.002592  0.019908 -0.017646
-1 -0.001882 -0.044642 -0.051474  ... -0.039493 -0.068330 -0.092204
-2  0.085299  0.050680  0.044451  ... -0.002592  0.002864 -0.025930
-3 -0.089063 -0.044642 -0.011595  ...  0.034309  0.022692 -0.009362
-4  0.005383 -0.044642 -0.036385  ... -0.002592 -0.031991 -0.046641
+0  0.038076  0.050680  0.061696  ... -0.002592  0.019907 -0.017646
+1 -0.001882 -0.044642 -0.051474  ... -0.039493 -0.068332 -0.092204
+2  0.085299  0.050680  0.044451  ... -0.002592  0.002861 -0.025930
+3 -0.089063 -0.044642 -0.011595  ...  0.034309  0.022688 -0.009362
+4  0.005383 -0.044642 -0.036385  ... -0.002592 -0.031988 -0.046641
 
 [5 rows x 10 columns]</code></pre>
 </div>
 <p>If you don’t see all columns, use the cursor to scroll to the right.</p>
 <p>Now let’s check the number of columns and rows.</p>
-<div class="codewrapper sourceCode" id="cb121">
+<div class="codewrapper sourceCode" id="cb119">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb121-1"><a href="#cb121-1" aria-hidden="true" tabindex="-1"></a>no_rows <span class="op">=</span> <span class="bu">len</span>(df_diabetes)</span>
-<span id="cb121-2"><a href="#cb121-2" aria-hidden="true" tabindex="-1"></a>no_cols <span class="op">=</span> <span class="bu">len</span>(df_diabetes.columns)</span>
-<span id="cb121-3"><a href="#cb121-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb121-4"><a href="#cb121-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Rows:'</span>, no_rows, <span class="st">'Columns:'</span>, no_cols)</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb119-1"><a href="#cb119-1" aria-hidden="true" tabindex="-1"></a>no_rows <span class="op">=</span> <span class="bu">len</span>(df_diabetes)</span>
+<span id="cb119-2"><a href="#cb119-2" aria-hidden="true" tabindex="-1"></a>no_cols <span class="op">=</span> <span class="bu">len</span>(df_diabetes.columns)</span>
+<span id="cb119-3"><a href="#cb119-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb119-4"><a href="#cb119-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Rows:'</span>, no_rows, <span class="st">'Columns:'</span>, no_cols)</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1535,39 +1526,39 @@ Name: gender, dtype: bool</code></pre>
 </div>
 <p>There are 442 rows organised in 10 columns.</p>
 <p>To get an overview, let us extract the mean of each column using ‘describe’ and plot all means as a bar chart. The Matplotlib function to plot a bar chart is <code>bar</code>:</p>
-<div class="codewrapper sourceCode" id="cb123">
+<div class="codewrapper sourceCode" id="cb121">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb123-1"><a href="#cb123-1" aria-hidden="true" tabindex="-1"></a>conc_means <span class="op">=</span> <span class="bu">list</span>()</span>
-<span id="cb123-2"><a href="#cb123-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb123-3"><a href="#cb123-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> df_diabetes:</span>
-<span id="cb123-4"><a href="#cb123-4" aria-hidden="true" tabindex="-1"></a>    conc_means.append(df_diabetes[col].describe()[<span class="st">'mean'</span>])</span>
-<span id="cb123-5"><a href="#cb123-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb123-6"><a href="#cb123-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The columns are: '</span>, <span class="bu">list</span>(df_diabetes.columns))</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb121-1"><a href="#cb121-1" aria-hidden="true" tabindex="-1"></a>conc_means <span class="op">=</span> <span class="bu">list</span>()</span>
+<span id="cb121-2"><a href="#cb121-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb121-3"><a href="#cb121-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> df_diabetes:</span>
+<span id="cb121-4"><a href="#cb121-4" aria-hidden="true" tabindex="-1"></a>    conc_means.append(df_diabetes[col].describe()[<span class="st">'mean'</span>])</span>
+<span id="cb121-5"><a href="#cb121-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb121-6"><a href="#cb121-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The columns are: '</span>, <span class="bu">list</span>(df_diabetes.columns))</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>The columns are:  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb125">
+<div class="codewrapper sourceCode" id="cb123">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb125-1"><a href="#cb125-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The medians are: '</span>, conc_means, <span class="dv">2</span>)</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb123-1"><a href="#cb123-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The medians are: '</span>, conc_means, <span class="dv">2</span>)</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>The medians are:  [-3.6396225400041895e-16, 1.309912460049817e-16, -8.013951493363262e-16, 1.2898179256674614e-16, -9.042540472060098e-17, 1.3011211012575365e-16, -4.563971121592555e-16, 3.8631742350078977e-16, -3.848103334221131e-16, -3.39848812741592e-16] 2</code></pre>
+<pre class="output" tabindex="0"><code>The medians are:  [-2.511816797794472e-19, 1.2307902309192911e-17, -2.2455642172282577e-16, -4.7975700837874414e-17, -1.3814992387869595e-17, 3.918434204559376e-17, -5.7771786349272854e-18, -9.042540472060099e-18, 9.293722151839546e-17, 1.1303175590075123e-17] 2</code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb127">
+<div class="codewrapper sourceCode" id="cb125">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb127-1"><a href="#cb127-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots()</span>
-<span id="cb127-2"><a href="#cb127-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb127-3"><a href="#cb127-3" aria-hidden="true" tabindex="-1"></a>bins <span class="op">=</span> <span class="bu">range</span>(<span class="dv">10</span>)</span>
-<span id="cb127-4"><a href="#cb127-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb127-5"><a href="#cb127-5" aria-hidden="true" tabindex="-1"></a>ax.bar(bins, conc_means)<span class="op">;</span></span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb125-1"><a href="#cb125-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> subplots()</span>
+<span id="cb125-2"><a href="#cb125-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb125-3"><a href="#cb125-3" aria-hidden="true" tabindex="-1"></a>bins <span class="op">=</span> <span class="bu">range</span>(<span class="dv">10</span>)</span>
+<span id="cb125-4"><a href="#cb125-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb125-5"><a href="#cb125-5" aria-hidden="true" tabindex="-1"></a>ax.bar(bins, conc_means)<span class="op">;</span></span></code></pre>
 </div>
 <figure><img src="../fig/output_116_1.png" alt="" class="figure mx-auto d-block"><figcaption>png</figcaption></figure><p>The bars in this plot go up and down. Note, however, that the vertical axis has values ranging from -10^(-15) to +10^(-15). This means that for all practical purposes all means are zero. This is not a coincidence. The original values have been normalised to zero mean for the purpose of applying some machine learning algorithm to them.</p>
 <p>In this example, we see how important it is to check the data before working with them.</p>
@@ -1624,7 +1615,7 @@ Name: gender, dtype: bool</code></pre>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
         <p>Built with <a href="https://github.com/carpentries/sandpaper" class="external-link">sandpaper (0.5.1)</a>,
-      <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.2.5)</a>,
+      <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.2.6)</a>,
       and <a href="https://github.com/carpentries/varnish" class="external-link">varnish (0.1.4)</a>.</p>
 			</div>
 		</footer>
@@ -1647,8 +1638,8 @@ Name: gender, dtype: bool</code></pre>
   "url": "https://carpentries.github.io/workbench-template-rmd/instructor/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-rmd/instructor/aio.html",
   "dateCreated": "2022-04-28",
-  "dateModified": "2022-05-10",
-  "datePublished": "2022-05-10"
+  "dateModified": "2022-05-17",
+  "datePublished": "2022-05-17"
 }
 
   </script><script>
