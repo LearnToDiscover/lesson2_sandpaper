@@ -282,7 +282,7 @@
     "xfun": {
       "Package": "xfun",
       "Version": "0.29",
-      "Source": "CRAN",
+      "Source": "Repository",
       "Repository": "CRAN",
       "RemoteType": "standard",
       "RemotePkgRef": "xfun",
