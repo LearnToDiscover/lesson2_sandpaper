@@ -119,6 +119,10 @@ print(sys.version)
 from pandas import read_csv
 ```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): ModuleNotFoundError: No module named 'pandas'
+```
+
 
 
 Executing this code does not lead to any output on the screen. However, the function is now ready to be used. To use it, we type its name and provide the required arguments. The following code should import the Everley's data into your JupyterLab notebook (or other Python environment):
@@ -129,6 +133,10 @@ Executing this code does not lead to any output on the screen. However, the func
 # (please go to the next cell if using Windows)
 
 df = read_csv("data/everleys_data.csv") 
+```
+
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'read_csv' is not defined
 ```
 
 
@@ -158,26 +166,8 @@ To see the contents of `df`, simply use:
 df
 ```
 
-```{.output}
-     calcium      sodium
-0   3.455582  112.690980
-1   3.669026  125.663330
-2   2.789910  105.821810
-3   2.939900   98.172772
-4   5.426060   97.931489
-5   0.715811  120.858330
-6   5.652390  112.871500
-7   3.571320  112.647360
-8   4.300067  132.031720
-9   1.369419  118.499010
-10  2.550962  117.373730
-11  2.894129  134.052390
-12  3.664987  105.346410
-13  1.362779  123.359490
-14  3.718798  125.021060
-15  1.865868  112.075420
-16  3.272809  117.588040
-17  3.917591  101.009870
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 
@@ -196,13 +186,8 @@ For large data sets, the function `head` is a convenient way to get a feel of th
 df.head()
 ```
 
-```{.output}
-    calcium      sodium
-0  3.455582  112.690980
-1  3.669026  125.663330
-2  2.789910  105.821810
-3  2.939900   98.172772
-4  5.426060   97.931489
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 
@@ -216,13 +201,8 @@ If you feel there are too many decimal places in the default view, you can restr
 df.head().round(2)
 ```
 
-```{.output}
-   calcium  sodium
-0     3.46  112.69
-1     3.67  125.66
-2     2.79  105.82
-3     2.94   98.17
-4     5.43   97.93
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 
@@ -232,12 +212,18 @@ While we can see how many rows there are in a dataframe when we display the whol
 
 ```python
 no_rows = len(df)
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
+```
+
+```python
 print('Data frame has', no_rows, 'rows')
 ```
 
-```{.output}
-Data frame has 18 rows
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'no_rows' is not defined
 ```
 
 You could see above, that the columns of the dataframe have labels. To see all labels:
@@ -246,12 +232,18 @@ You could see above, that the columns of the dataframe have labels. To see all l
 
 ```python
 column_labels = df.columns
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
+```
+
+```python
 print(column_labels)
 ```
 
-```{.output}
-Index(['calcium', 'sodium'], dtype='object')
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'column_labels' is not defined
 ```
 
 
@@ -261,12 +253,18 @@ Now we can count the labels to obtain the number of columns:
 
 ```python
 no_columns = len(column_labels)
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'column_labels' is not defined
+```
+
+```python
 print('Data frame has', no_columns, 'columns')
 ```
 
-```{.output}
-Data frame has 2 columns
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'no_columns' is not defined
 ```
 
 
@@ -276,12 +274,18 @@ And if you want to have both the number of the rows and the columns together, us
 
 ```python
 df_shape = df.shape
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
+```
+
+```python
 print('Data frame has', df_shape[0], 'rows and',df_shape[1],  'columns')
 ```
 
-```{.output}
-Data frame has 18 rows and 2 columns
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df_shape' is not defined
 ```
 
 
@@ -296,10 +300,8 @@ To find out what data type is contained in each of the columns, us `dtypes`, ano
 df.dtypes
 ```
 
-```{.output}
-calcium    float64
-sodium     float64
-dtype: object
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 In this case, both columns contain floating point (decimal) numbers.
@@ -323,26 +325,28 @@ From this exercise we can see that a dataframe can contain different types of da
 from pandas import read_csv
 
 # dataframe from .csv file
+```
+
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): ModuleNotFoundError: No module named 'pandas'
+```
+
+```python
 df_loan = read_csv("data/loan_data.csv") 
 
 # display contents
+```
+
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'read_csv' is not defined
+```
+
+```python
 df_loan.head(10)
 ```
 
-```{.output}
-    Loan_ID  Gender Married  ... Loan_Amount_Term Credit_History Property_Area
-0  LP001015    Male     Yes  ...            360.0            1.0         Urban
-1  LP001022    Male     Yes  ...            360.0            1.0         Urban
-2  LP001031    Male     Yes  ...            360.0            1.0         Urban
-3  LP001035    Male     Yes  ...            360.0            NaN         Urban
-4  LP001051    Male      No  ...            360.0            1.0         Urban
-5  LP001054    Male     Yes  ...            360.0            1.0         Urban
-6  LP001055  Female      No  ...            360.0            1.0     Semiurban
-7  LP001056    Male     Yes  ...            360.0            0.0         Rural
-8  LP001059    Male     Yes  ...            240.0            1.0         Urban
-9  LP001067    Male      No  ...            360.0            1.0     Semiurban
-
-[10 rows x 12 columns]
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df_loan' is not defined
 ```
 ::::::::::::::::: 
 ::::::::::::::::::::::::
@@ -358,26 +362,8 @@ To access data contained in a specific column of a dataframe, we can use a simil
 df['calcium']
 ```
 
-```{.output}
-0     3.455582
-1     3.669026
-2     2.789910
-3     2.939900
-4     5.426060
-5     0.715811
-6     5.652390
-7     3.571320
-8     4.300067
-9     1.369419
-10    2.550962
-11    2.894129
-12    3.664987
-13    1.362779
-14    3.718798
-15    1.865868
-16    3.272809
-17    3.917591
-Name: calcium, dtype: float64
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 
@@ -388,11 +374,8 @@ To access individual rows of a column we use two pairs of square brackets:
 df['calcium'][0:3]
 ```
 
-```{.output}
-0    3.455582
-1    3.669026
-2    2.789910
-Name: calcium, dtype: float64
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 Here all rules for [slicing](https://docs.python.org/3/tutorial/introduction.html) can be applied.
@@ -409,11 +392,8 @@ To access non-contiguous elements, we use an additional pair of square brackets 
 df['calcium'][[1, 3, 7]]
 ```
 
-```{.output}
-1    3.669026
-3    2.939900
-7    3.571320
-Name: calcium, dtype: float64
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 Another possibility to index and slice a dataframe is the use of the 'index location' or `iloc` property. It refers first to rows and then to columns by index, all within a single pair of brackets. For example, to get all rows `:` of the first column (index `0`), you use:
@@ -425,26 +405,8 @@ Another possibility to index and slice a dataframe is the use of the 'index loca
 df.iloc[:, 0]
 ```
 
-```{.output}
-0     3.455582
-1     3.669026
-2     2.789910
-3     2.939900
-4     5.426060
-5     0.715811
-6     5.652390
-7     3.571320
-8     4.300067
-9     1.369419
-10    2.550962
-11    2.894129
-12    3.664987
-13    1.362779
-14    3.718798
-15    1.865868
-16    3.272809
-17    3.917591
-Name: calcium, dtype: float64
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 To display only the first three calcium concentrations, you use slicing, remembering that the upper bound is excluded):
@@ -455,11 +417,8 @@ To display only the first three calcium concentrations, you use slicing, remembe
 df.iloc[0:3, 0]
 ```
 
-```{.output}
-0    3.455582
-1    3.669026
-2    2.789910
-Name: calcium, dtype: float64
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 To access non-consecutive values, we can use a pair of square brackets within the pair of square brackets: 
@@ -469,11 +428,8 @@ To access non-consecutive values, we can use a pair of square brackets within th
 df.iloc[[2, 4, 7], 0]
 ```
 
-```{.output}
-2    2.78991
-4    5.42606
-7    3.57132
-Name: calcium, dtype: float64
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 Similarly, we can access the values from multiple columns:
@@ -484,11 +440,8 @@ Similarly, we can access the values from multiple columns:
 df.iloc[[2, 4, 7], :]
 ```
 
-```{.output}
-   calcium      sodium
-2  2.78991  105.821810
-4  5.42606   97.931489
-7  3.57132  112.647360
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 To pick only the even rows from the two columns, check this colon notation:
@@ -499,17 +452,8 @@ To pick only the even rows from the two columns, check this colon notation:
 df.iloc[:18:2, :]
 ```
 
-```{.output}
-     calcium      sodium
-0   3.455582  112.690980
-2   2.789910  105.821810
-4   5.426060   97.931489
-6   5.652390  112.871500
-8   4.300067  132.031720
-10  2.550962  117.373730
-12  3.664987  105.346410
-14  3.718798  125.021060
-16  3.272809  117.588040
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 The number after the second colon indicates the stepsize.
@@ -527,25 +471,8 @@ Display the calcium and sodium concentrations of all patients except the first. 
 df[['calcium', 'sodium']][1:]
 ```
 
-```{.output}
-     calcium      sodium
-1   3.669026  125.663330
-2   2.789910  105.821810
-3   2.939900   98.172772
-4   5.426060   97.931489
-5   0.715811  120.858330
-6   5.652390  112.871500
-7   3.571320  112.647360
-8   4.300067  132.031720
-9   1.369419  118.499010
-10  2.550962  117.373730
-11  2.894129  134.052390
-12  3.664987  105.346410
-13  1.362779  123.359490
-14  3.718798  125.021060
-15  1.865868  112.075420
-16  3.272809  117.588040
-17  3.917591  101.009870
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 ::::::::::::::::: 
@@ -563,10 +490,8 @@ Some tables contain missing entries. You can check a dataframe for such missing 
 df.isnull().any()
 ```
 
-```{.output}
-calcium    False
-sodium     False
-dtype: bool
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 This shows that there are no missing entries in our dataframe.
@@ -585,8 +510,8 @@ This shows that there are no missing entries in our dataframe.
 df_loan['Self_Employed'][8]
 ```
 
-```{.output}
-nan
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df_loan' is not defined
 ```
 
 
@@ -595,9 +520,8 @@ nan
 df_loan['Self_Employed'][8:9].isnull()
 ```
 
-```{.output}
-8    True
-Name: Self_Employed, dtype: bool
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df_loan' is not defined
 ```
 
 ::::::::::::::::: 
@@ -614,20 +538,18 @@ To get a summary of basic data features use the function `describe`:
 
 ```python
 description = df.describe()
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
+```
+
+```python
 description
 ```
 
-```{.output}
-         calcium      sodium
-count  18.000000   18.000000
-mean    3.174301  115.167484
-std     1.306652   10.756852
-min     0.715811   97.931489
-25%     2.610699  107.385212
-50%     3.364195  115.122615
-75%     3.706355  122.734200
-max     5.652390  134.052390
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'description' is not defined
 ```
 
 
@@ -643,8 +565,8 @@ description.loc['mean']['calcium']
 # Option 2
 ```
 
-```{.output}
-3.1743005405555555
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'description' is not defined
 ```
 
 ```python
@@ -653,8 +575,8 @@ description.loc['mean'][0]
 # Option 3
 ```
 
-```{.output}
-3.1743005405555555
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'description' is not defined
 ```
 
 ```python
@@ -663,16 +585,16 @@ description['calcium']['mean']
 # Option 4
 ```
 
-```{.output}
-3.1743005405555555
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'description' is not defined
 ```
 
 ```python
 description['calcium'][1]
 ```
 
-```{.output}
-3.1743005405555555
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'description' is not defined
 ```
 
 
@@ -701,13 +623,8 @@ for col in df:
     print(df[col][0:2])
 ```
 
-```{.output}
-0    3.455582
-1    3.669026
-Name: calcium, dtype: float64
-0    112.69098
-1    125.66333
-Name: sodium, dtype: float64
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 As a slightly more complex example, we access the median ('50%') of each column in the description and add it to a list:
@@ -720,12 +637,18 @@ conc_medians = list()
 for col in df:
     
     conc_medians.append(df[col].describe()['50%'])
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
+```
+
+```python
 print('The columns are: ', list(df.columns))
 ```
 
-```{.output}
-The columns are:  ['calcium', 'sodium']
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 ```python
@@ -733,7 +656,7 @@ print('The medians are: ', conc_medians)
 ```
 
 ```{.output}
-The medians are:  [3.3641954, 115.122615]
+The medians are:  []
 ```
 
 This approach is useful for data frames with a large number of columns. For instance, it is possible to then create a boxplot or histogram for the means, medians etc. of the dataframe and thus to get an overview of all (comparable) columns. 
@@ -751,31 +674,50 @@ First we randomly create as many labels as we have rows in the data frame. We ca
 
 ```python
 from numpy.random import randint
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): ModuleNotFoundError: No module named 'numpy'
+```
+
+```python
 no_rows = len(df)
-randomLabel = randint(2, size=no_rows)
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
+```
+
+```python
+randomLabel = randint(2, size=no_rows)
+```
+
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'randint' is not defined
+```
+
+```python
 print('Number of rows:  ', no_rows)
 ```
 
-```{.output}
-Number of rows:   18
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'no_rows' is not defined
 ```
 
 ```python
 print('Number of Labels:', len(randomLabel))
 ```
 
-```{.output}
-Number of Labels: 18
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'randomLabel' is not defined
 ```
 
 ```python
 print('Labels:          ', randomLabel)
 ```
 
-```{.output}
-Labels:           [0 1 0 0 0 0 0 1 1 0 1 1 0 1 0 1 0 1]
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'randomLabel' is not defined
 ```
 
 
@@ -790,17 +732,18 @@ As gender specification can include more than two labels, try to create a column
 
 ```python
 df['gender'] = randomLabel
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'randomLabel' is not defined
+```
+
+```python
 df.head()
 ```
 
-```{.output}
-    calcium      sodium  gender
-0  3.455582  112.690980       0
-1  3.669026  125.663330       1
-2  2.789910  105.821810       0
-3  2.939900   98.172772       0
-4  5.426060   97.931489       0
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 Now we can use the information contained in 'gender' to filter the data by gender. To achieve this, we use a conditional statement. Let us check which of the rows are labelled as '1':
@@ -812,26 +755,8 @@ Now we can use the information contained in 'gender' to filter the data by gende
 df['gender'] == 1
 ```
 
-```{.output}
-0     False
-1      True
-2     False
-3     False
-4     False
-5     False
-6     False
-7      True
-8      True
-9     False
-10     True
-11     True
-12    False
-13     True
-14    False
-15     True
-16    False
-17     True
-Name: gender, dtype: bool
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 If we assign the result of the conditional statement (Boolean True or False) to a variable, then this variable can act as a template to filter the data. If we call the data frame with that variable, we will only get the rows where the condition was found to be True:
@@ -839,20 +764,18 @@ If we assign the result of the conditional statement (Boolean True or False) to 
 
 ```python
 df_female = df['gender'] == 1
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
+```
+
+```python
 df[df_female]
 ```
 
-```{.output}
-     calcium     sodium  gender
-1   3.669026  125.66333       1
-7   3.571320  112.64736       1
-8   4.300067  132.03172       1
-10  2.550962  117.37373       1
-11  2.894129  134.05239       1
-13  1.362779  123.35949       1
-15  1.865868  112.07542       1
-17  3.917591  101.00987       1
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
 ```
 
 
@@ -869,22 +792,58 @@ Modify the code to calculate the number of samples labelled 0 and check the numb
 
 ```python
 from numpy.random import randint
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): ModuleNotFoundError: No module named 'numpy'
+```
+
+```python
 no_rows = len(df)
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
+```
+
+```python
 randomLabel = randint(2, size=no_rows)
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'randint' is not defined
+```
+
+```python
 df['gender'] = randomLabel
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'randomLabel' is not defined
+```
+
+```python
 df_male = df['gender'] == 0
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
+```
+
+```python
 no_males = len(df[df_male])
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'df' is not defined
+```
+
+```python
 print(no_males, 'samples are labelled "male".')
 ```
 
-```{.output}
-10 samples are labelled "male".
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'no_males' is not defined
 ```
 ::::::::::::::::: 
 ::::::::::::::::::::::::::::::::::
@@ -898,19 +857,35 @@ The simplest way of visualisation is to use Pandas functionality which offers di
 
 ```python
 import matplotlib.pyplot as plt
+```
+
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): ModuleNotFoundError: No module named 'matplotlib'
+```
+
+```python
 df = read_csv("data/everleys_data.csv") 
+```
+
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'read_csv' is not defined
+```
+
+```python
 plt.boxplot(df)
 ```
 
-```{.output}
-{'whiskers': [<matplotlib.lines.Line2D object at 0x7f5e5b9484f0>, <matplotlib.lines.Line2D object at 0x7f5e5b948790>, <matplotlib.lines.Line2D object at 0x7f5e5b949780>, <matplotlib.lines.Line2D object at 0x7f5e5b949a20>], 'caps': [<matplotlib.lines.Line2D object at 0x7f5e5b948a30>, <matplotlib.lines.Line2D object at 0x7f5e5b948cd0>, <matplotlib.lines.Line2D object at 0x7f5e5b949cc0>, <matplotlib.lines.Line2D object at 0x7f5e5b949f60>], 'boxes': [<matplotlib.lines.Line2D object at 0x7f5e5b948250>, <matplotlib.lines.Line2D object at 0x7f5e5b9494e0>], 'medians': [<matplotlib.lines.Line2D object at 0x7f5e5b948f70>, <matplotlib.lines.Line2D object at 0x7f5e5b94a200>], 'fliers': [<matplotlib.lines.Line2D object at 0x7f5e5b949210>, <matplotlib.lines.Line2D object at 0x7f5e5b94a4a0>], 'means': []}
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'plt' is not defined
 ```
 
 ```python
 plt.show()
 ```
 
-<img src="fig/01-introduction-rendered-unnamed-chunk-35-1.png" width="672" style="display: block; margin: auto;" />
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'plt' is not defined
+```
 
 By default, boxplots are shown for all columns if no further argument is given to the function (empty round parenthesis). As the calcium plot is rather squeezed we may wish to see it individually. This can be done by specifying the calcium column as an argument:
     
@@ -926,15 +901,17 @@ By default, boxplots are shown for all columns if no further argument is given t
 plt.boxplot(df['calcium'])
 ```
 
-```{.output}
-{'whiskers': [<matplotlib.lines.Line2D object at 0x7f5e598546a0>, <matplotlib.lines.Line2D object at 0x7f5e59854940>], 'caps': [<matplotlib.lines.Line2D object at 0x7f5e59854be0>, <matplotlib.lines.Line2D object at 0x7f5e59854e80>], 'boxes': [<matplotlib.lines.Line2D object at 0x7f5e598132b0>], 'medians': [<matplotlib.lines.Line2D object at 0x7f5e59855120>], 'fliers': [<matplotlib.lines.Line2D object at 0x7f5e598553c0>], 'means': []}
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'plt' is not defined
 ```
 
 ```python
 plt.show()
 ```
 
-<img src="fig/01-introduction-rendered-unnamed-chunk-36-3.png" width="672" style="display: block; margin: auto;" />
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'plt' is not defined
+```
 
 ### Plots using Matplotlib
 
@@ -953,6 +930,10 @@ For this, we import the function `subplots` from the [pyplot library](https://ma
 from matplotlib.pyplot import subplots
 ```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): ModuleNotFoundError: No module named 'matplotlib'
+```
+
 The way to use `subplots` is to first set up a figure environment (below it is called 'fig') and an empty coordinate system (below called 'ax'). The plot is then done using one of the many methods available in Matplotlib. We apply it to the coordinate system 'ax'. 
 
 As an example, let us create a [boxplot](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.boxplot.html#matplotlib.pyplot.boxplot|) of the calcium variable. As an argument of the function we need to specify the data. We can use the values of the 'calcium' concentrations from the column with that name:
@@ -962,17 +943,27 @@ As an example, let us create a [boxplot](https://matplotlib.org/api/_as_gen/matp
 
 ```python
 fig, ax = subplots()
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'subplots' is not defined
+```
+
+```python
 ax.boxplot(df['calcium'])
 ```
 
-```{.output}
-{'whiskers': [<matplotlib.lines.Line2D object at 0x7f5e59812b90>, <matplotlib.lines.Line2D object at 0x7f5e59813220>], 'caps': [<matplotlib.lines.Line2D object at 0x7f5e598130d0>, <matplotlib.lines.Line2D object at 0x7f5e5b9a40a0>], 'boxes': [<matplotlib.lines.Line2D object at 0x7f5e59810be0>], 'medians': [<matplotlib.lines.Line2D object at 0x7f5e5b9a7310>], 'fliers': [<matplotlib.lines.Line2D object at 0x7f5e5b9a7d60>], 'means': []}
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
 ```
 
 ```python
 ax.set_title('Boxplot of Everley\'s Calcium');
 
+```
+
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
 ```
 
 ![png](fig/output_93_0.png)
@@ -988,26 +979,42 @@ Here is an example to create two boxplots next to each other. The keyword argume
 
 ```python
 fig, ax = subplots(ncols=2)
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'subplots' is not defined
+```
+
+```python
 ax[0].boxplot(df['calcium'])
 ```
 
-```{.output}
-{'whiskers': [<matplotlib.lines.Line2D object at 0x7f5e598d95d0>, <matplotlib.lines.Line2D object at 0x7f5e598d9870>], 'caps': [<matplotlib.lines.Line2D object at 0x7f5e598d9b10>, <matplotlib.lines.Line2D object at 0x7f5e598d9db0>], 'boxes': [<matplotlib.lines.Line2D object at 0x7f5e598d9450>], 'medians': [<matplotlib.lines.Line2D object at 0x7f5e598da050>], 'fliers': [<matplotlib.lines.Line2D object at 0x7f5e598da2f0>], 'means': []}
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
 ```
 
 ```python
 ax[0].set_title('Calcium')
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
+```
+
+```python
 ax[1].boxplot(df['sodium'])
 ```
 
-```{.output}
-{'whiskers': [<matplotlib.lines.Line2D object at 0x7f5e598daad0>, <matplotlib.lines.Line2D object at 0x7f5e598dad70>], 'caps': [<matplotlib.lines.Line2D object at 0x7f5e598db010>, <matplotlib.lines.Line2D object at 0x7f5e598db2b0>], 'boxes': [<matplotlib.lines.Line2D object at 0x7f5e598da830>], 'medians': [<matplotlib.lines.Line2D object at 0x7f5e598db550>], 'fliers': [<matplotlib.lines.Line2D object at 0x7f5e598db7f0>], 'means': []}
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
 ```
 
 ```python
 ax[1].set_title('Sodium');
+```
+
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
 ```
 
 
@@ -1027,19 +1034,27 @@ If you prefer to have the boxplots of both columns in a single figure, that can 
 
 ```python
 fig, ax = subplots(ncols=1, nrows=1)
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'subplots' is not defined
+```
+
+```python
 ax.boxplot([df['calcium'], df['sodium']], positions=[1, 2])
 ```
 
-```{.output}
-{'whiskers': [<matplotlib.lines.Line2D object at 0x7f5e5b948f10>, <matplotlib.lines.Line2D object at 0x7f5e5b949a50>, <matplotlib.lines.Line2D object at 0x7f5e5b94a740>, <matplotlib.lines.Line2D object at 0x7f5e5b94a770>], 'caps': [<matplotlib.lines.Line2D object at 0x7f5e5b949b70>, <matplotlib.lines.Line2D object at 0x7f5e5b949ea0>, <matplotlib.lines.Line2D object at 0x7f5e59810ee0>, <matplotlib.lines.Line2D object at 0x7f5e59811210>], 'boxes': [<matplotlib.lines.Line2D object at 0x7f5e5b9494e0>, <matplotlib.lines.Line2D object at 0x7f5e5b94bb20>], 'medians': [<matplotlib.lines.Line2D object at 0x7f5e5b94a4a0>, <matplotlib.lines.Line2D object at 0x7f5e5b9a7220>], 'fliers': [<matplotlib.lines.Line2D object at 0x7f5e5b94b820>, <matplotlib.lines.Line2D object at 0x7f5e5b9a7b20>], 'means': []}
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
 ```
 
 ```python
 ax.set_title('Boxplot of Calcium (left) and Sodium (right)')
 ```
 
-<img src="fig/01-introduction-rendered-unnamed-chunk-40-5.png" width="672" style="display: block; margin: auto;" />
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
+```
 
    
 ![png](fig/output_98_1.png)
@@ -1055,16 +1070,26 @@ Plot the boxplots of the 'ApplicantIncome' and the 'CoapplicantIncome' in the Lo
 
 ```python
 fig, ax = subplots(ncols=1, nrows=1)
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'subplots' is not defined
+```
+
+```python
 ax.boxplot([df_loan['ApplicantIncome'], df_loan['CoapplicantIncome']], positions=[1, 2])
 ```
 
-```{.output}
-{'whiskers': [<matplotlib.lines.Line2D object at 0x7f5e5b94b250>, <matplotlib.lines.Line2D object at 0x7f5e5b9c4640>, <matplotlib.lines.Line2D object at 0x7f5e5976c100>, <matplotlib.lines.Line2D object at 0x7f5e5976c3a0>], 'caps': [<matplotlib.lines.Line2D object at 0x7f5e59857160>, <matplotlib.lines.Line2D object at 0x7f5e59874fd0>, <matplotlib.lines.Line2D object at 0x7f5e5976c640>, <matplotlib.lines.Line2D object at 0x7f5e5976c8e0>], 'boxes': [<matplotlib.lines.Line2D object at 0x7f5e5b948c10>, <matplotlib.lines.Line2D object at 0x7f5e5973be20>], 'medians': [<matplotlib.lines.Line2D object at 0x7f5e5973a4d0>, <matplotlib.lines.Line2D object at 0x7f5e5976cb80>], 'fliers': [<matplotlib.lines.Line2D object at 0x7f5e5973bb80>, <matplotlib.lines.Line2D object at 0x7f5e5976ce20>], 'means': []}
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
 ```
 
 ```python
 ax.set_title('Applicant Income (left) & Co-Applicant Income (right)');
+```
+
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
 ```
 
 
@@ -1084,32 +1109,50 @@ Another good overview is the histogram: Containers or 'bins' are created over th
 
 ```python
 fig, ax = subplots(ncols=2, nrows=1)
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'subplots' is not defined
+```
+
+```python
 ax[0].hist(df['calcium'])
 ```
 
-```{.output}
-(array([1., 2., 1., 1., 3., 5., 2., 1., 0., 2.]), array([0.71581063, 1.20946859, 1.70312654, 2.1967845 , 2.69044246,
-       3.18410042, 3.67775837, 4.17141633, 4.66507429, 5.15873224,
-       5.6523902 ]), <BarContainer object of 10 artists>)
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
 ```
 
 ```python
 ax[0].set(xlabel='Calcium', ylabel='Count');
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
+```
+
+```python
 ax[1].hist(df['sodium'])
 ```
 
-```{.output}
-(array([3., 0., 2., 1., 3., 3., 1., 3., 0., 2.]), array([ 97.931489 , 101.5435791, 105.1556692, 108.7677593, 112.3798494,
-       115.9919395, 119.6040296, 123.2161197, 126.8282098, 130.4402999,
-       134.05239  ]), <BarContainer object of 10 artists>)
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
 ```
 
 ```python
 ax[1].set(xlabel='Sodium', ylabel='Count');
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
+```
+
+```python
 fig.suptitle('Histograms of Everley concentrations', fontsize=15);
+```
+
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'fig' is not defined
 ```
 
 
@@ -1125,31 +1168,50 @@ This uses the default value for the generation of the bins. It is set to 10 bins
 
 ```python
 fig, ax = subplots(ncols=2, nrows=1)
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'subplots' is not defined
+```
+
+```python
 ax[0].hist(df['calcium'], bins=5)
 ```
 
-```{.output}
-(array([3., 2., 8., 3., 2.]), array([0.71581063, 1.70312654, 2.69044246, 3.67775837, 4.66507429,
-       5.6523902 ]), <BarContainer object of 5 artists>)
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
 ```
 
 ```python
 ax[0].set(xlabel='Calcium, 5 bins', ylabel='Count');
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
+```
+
+```python
 ax[1].hist(df['calcium'], bins=15)
 ```
 
-```{.output}
-(array([1., 2., 0., 1., 0., 1., 3., 1., 4., 2., 1., 0., 0., 0., 2.]), array([0.71581063, 1.04491593, 1.37402124, 1.70312654, 2.03223185,
-       2.36133715, 2.69044246, 3.01954776, 3.34865307, 3.67775837,
-       4.00686368, 4.33596898, 4.66507429, 4.99417959, 5.3232849 ,
-       5.6523902 ]), <BarContainer object of 15 artists>)
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
 ```
 
 ```python
 ax[1].set(xlabel='Calcium, 15 bins', ylabel='Count');
+```
+
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
+```
+
+```python
 fig.suptitle('Histograms with Different Binnings', fontsize=16);
+```
+
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'fig' is not defined
 ```
 
 
@@ -1166,32 +1228,58 @@ Note how the y-label of the right figure is not placed well. To correct for the 
 
 ```python
 fig, ax = subplots(ncols=2, nrows=1)
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'subplots' is not defined
+```
+
+```python
 ax[0].hist(df['calcium'], bins=5)
 ```
 
-```{.output}
-(array([3., 2., 8., 3., 2.]), array([0.71581063, 1.70312654, 2.69044246, 3.67775837, 4.66507429,
-       5.6523902 ]), <BarContainer object of 5 artists>)
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
 ```
 
 ```python
 ax[0].set(xlabel='Calcium, 5 bins', ylabel='Count');
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
+```
+
+```python
 ax[1].hist(df['calcium'], bins=15)
 ```
 
-```{.output}
-(array([1., 2., 0., 1., 0., 1., 3., 1., 4., 2., 1., 0., 0., 0., 2.]), array([0.71581063, 1.04491593, 1.37402124, 1.70312654, 2.03223185,
-       2.36133715, 2.69044246, 3.01954776, 3.34865307, 3.67775837,
-       4.00686368, 4.33596898, 4.66507429, 4.99417959, 5.3232849 ,
-       5.6523902 ]), <BarContainer object of 15 artists>)
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
 ```
 
 ```python
 ax[1].set(xlabel='Calcium, 15 bins', ylabel='Count');
+```
+
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
+```
+
+```python
 fig.suptitle('Histograms with Different Binnings', fontsize=16);
+```
+
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'fig' is not defined
+```
+
+```python
 fig.tight_layout()
+```
+
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'fig' is not defined
 ```
 
 
@@ -1212,21 +1300,34 @@ Take the loan data and display the histogram of the loan amount that people aske
 # Histogram of loan amounts in k£
 
 fig, ax = subplots()
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'subplots' is not defined
+```
+
+```python
 ax.hist(df_loan['LoanAmount'], bins=20)
 ```
 
-```{.output}
-(array([12., 34., 63., 97., 67., 33., 28.,  9.,  6.,  2.,  5.,  1.,  1.,
-        1.,  1.,  0.,  1.,  0.,  0.,  1.]), array([ 28. ,  54.1,  80.2, 106.3, 132.4, 158.5, 184.6, 210.7, 236.8,
-       262.9, 289. , 315.1, 341.2, 367.3, 393.4, 419.5, 445.6, 471.7,
-       497.8, 523.9, 550. ]), <BarContainer object of 20 artists>)
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
 ```
 
 ```python
 ax.set(xlabel='Loan amount', ylabel='Count');
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
+```
+
+```python
 ax.set_title('Histograms of Loan Amounts', fontsize=16);
+```
+
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
 ```
 
 
@@ -1275,12 +1376,18 @@ Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'diab
 
 ```python
 from pandas import DataFrame
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): ModuleNotFoundError: No module named 'pandas'
+```
+
+```python
 df_diabetes = DataFrame(data=X)
 ```
 
 ```{.error}
-Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'X' is not defined
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'DataFrame' is not defined
 ```
 
 ```python
@@ -1319,7 +1426,7 @@ print('Rows:', no_rows, 'Columns:', no_cols)
 ```
 
 ```{.error}
-Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'no_cols' is not defined
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'no_rows' is not defined
 ```
 
 There are 442 rows organised in 10 columns.
@@ -1359,14 +1466,20 @@ The medians are:  [] 2
 
 ```python
 fig, ax = subplots()
+```
 
+```{.error}
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'subplots' is not defined
+```
+
+```python
 bins = range(10)
 
 ax.bar(bins, conc_means);
 ```
 
 ```{.error}
-Error in py_call_impl(callable, dots$args, dots$keywords): ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (10,) and arg 1 with shape (0,).
+Error in py_call_impl(callable, dots$args, dots$keywords): NameError: name 'ax' is not defined
 ```
 
     
